@@ -4,4 +4,14 @@ class Student:
         self.year = year
         self.courses = courses
     
-    def 
+    def add_class(self, course):
+        self.courses.append(course)
+
+    def get_num_classes(self):
+        return len(self.courses)
+
+    
+    def summary(self):
+        print(f"{self.name} is a {self.year} enrolled in {self.get_num_classes()} classes")
+
+
